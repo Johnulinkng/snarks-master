@@ -1,0 +1,22 @@
+[package]
+name = "snarks"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members=["plonk", "pcs", "compiler"]
+
+[dependencies]
+ark-std = "0.4.0"
+ark-ff = "0.4.2"
+ark-poly = "0.4.2"
+
+merlin = "3.0.0"
+ark-serialize = "0.4.2"
+
+ark-ec = "0.4.2"
+ark-bn254 = "0.4.0"
+ark-bls12-377 = "0.4.0"
+ark-bls12-381 = "0.4.0"
